@@ -20,15 +20,17 @@ int main(int _argc, char **_argv)
   {
     for (int j = i + 1; j < a; j++)
     {
+      total[i] = angka[i] - angka[j];
+      if (total[i] > big) {
+        big = total[i];
+      }
       if (angka[i] > angka[j])
       {
-        total[i] = angka[i] - angka[j];
+        ;
         temp = angka[i];
         angka[i] = angka[j];
         angka[j] = temp;
-        if (total[i] > big) {
-        big = total[i];
-      }
+        
     }
   }
   }
