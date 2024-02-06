@@ -4,7 +4,7 @@
 
 int main(int _argc, char **_argv)
 {
-  int a, i, temp;
+  int a, temp;
   float b = 0;
   scanf("%d", &a);
   int angka[a];
@@ -25,9 +25,11 @@ int main(int _argc, char **_argv)
       }
     }
   }
-
-  printf("%.2f\n", b / a);
-  printf("%d\n", angka[a - 1]);
+  
   printf("%d\n", angka[0]);
+  printf("%d\n", angka[a - 1]);
+  printf("%.2f\n", b / a);
+
   return 0;
 }
+
